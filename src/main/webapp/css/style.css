@@ -1,0 +1,223 @@
+body {
+    background-image: url("../images/oie_16101420asLurprV.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.image-upload>input {
+    display: none;
+}
+
+.image-upload img {
+    width: 60px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    height: 17px;
+    border: 0;
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    box-shadow: -8px 10px 0px -7px #ebebeb, 8px 10px 0px -7px #ebebeb;
+    -webkit-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+}
+
+input[type=text]:focus {
+    outline: none;
+    box-shadow: -8px 10px 0px -7px #4EA6EA, 8px 10px 0px -7px #4EA6EA;
+}
+
+input[type=password] {
+    height: 17px;
+    border: 0;
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    box-shadow: -8px 10px 0px -7px #ebebeb, 8px 10px 0px -7px #ebebeb;
+    -webkit-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+}
+
+input[type=password]:focus {
+    outline: none;
+    box-shadow: -8px 10px 0px -7px #4EA6EA, 8px 10px 0px -7px #4EA6EA;
+}
+
+textarea {
+    height: 60px;
+    border: 0;
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    box-shadow: 0px 0px 0px -7px #ebebeb, 0px 10px 0px -7px #ebebeb;
+    -webkit-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px -7px #4EA6EA, 0px 10px 0px -7px #4EA6EA;
+}
+
+.btn-default {
+    font-family: Raleway-SemiBold;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 35px;
+    border: 2px solid white;
+    border-radius: 40px;
+    background-color: gray;
+    transition: all 0.3s ease 0s;
+    width: 150px;
+}
+
+.containerBox {
+    width: 110px;
+    height: 110px;
+    margin: 100px auto;
+}
+
+
+/* CSS talk bubble */
+
+.talk-bubble-right {
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    width: 70%;
+    height: auto;
+    background-color: #3BB9FF;
+    color: white;
+}
+
+.talk-bubble-left {
+    margin: 20px;
+    margin-left: 65px;
+    display: inline-block;
+    position: relative;
+    width: 70%;
+    height: auto;
+    background-color: gray;
+    color: white;
+}
+
+.border-right {
+    border: 8px solid #3BB9FF;
+}
+
+.border-left {
+    border: 8px solid gray;
+}
+
+.round {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+}
+
+
+/* Right triangle placed top right flush. */
+
+.tri-right.border-right.right-top:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: -40px;
+    top: -8px;
+    bottom: auto;
+    border: 32px solid;
+    border-color: #3BB9FF transparent transparent transparent;
+}
+
+.tri-right.right-top:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: -20px;
+    top: 0px;
+    bottom: auto;
+    border: 20px solid;
+    border-color: #3BB9FF transparent transparent transparent;
+}
+
+
+/* left triangle placed top left flush. */
+
+.tri-left.border-left.left-top:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: auto;
+    left: -40px;
+    top: -8px;
+    bottom: auto;
+    border: 32px solid;
+    border-color: gray transparent transparent transparent;
+}
+
+.tri-left.left-top:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: auto;
+    left: -20px;
+    top: 0px;
+    bottom: auto;
+    border: 20px solid;
+    border-color: gray transparent transparent transparent;
+}
+
+
+/* talk bubble contents */
+
+.talktext {
+    padding: 1em;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.talktext p {
+    /* remove webkit p margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #3BB9FF;
+    border-radius: 10px;
+}
+
+
+/* Nav-bar Style*/
+
+.navbar-inverse {
+    border-color: #bdd4e7;
+    background-color: #bdd4e7;
+    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+}

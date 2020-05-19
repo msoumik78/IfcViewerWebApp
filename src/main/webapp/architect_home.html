@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Architect</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body  {
+            background-image: url("images/dining.jpg");
+            background-color: #cccccc;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 665px;
+            background-size: 100% 100%;
+        }
+        .image-upload > input{
+            display: none;
+        }
+
+        .image-upload img{
+            width: 60px;
+            cursor: pointer;
+        }
+        input[type=text] {
+            height:17px;
+            border: 0;
+            width: calc(100% - 40px);
+            margin-left:20px;
+            box-shadow: -8px 10px 0px -7px #ebebeb, 8px 10px 0px -7px #ebebeb;
+            -webkit-transition: box-shadow 0.3s;
+            transition: box-shadow 0.3s;
+        }
+        input[type=text]:focus {
+            outline: none;
+            box-shadow: -8px 10px 0px -7px #4EA6EA, 8px 10px 0px -7px #4EA6EA;
+        }
+
+        textarea {
+            height:60px;
+            border: 0;
+            width: calc(100% - 40px);
+            margin-left:20px;
+            box-shadow: 0px 0px 0px -7px #ebebeb, 0px 10px 0px -7px #ebebeb;
+            -webkit-transition: box-shadow 0.3s;
+            transition: box-shadow 0.3s;
+        }
+        textarea:focus {
+            outline: none;
+            box-shadow: 0px 0px 0px -7px #4EA6EA, 0px 10px 0px -7px #4EA6EA;
+        }
+        .btn-default {
+            font-family: Raleway-SemiBold;
+            font-size: 16px;
+            color: white;
+            letter-spacing: 1px;
+            line-height: 35px;
+            border: 2px solid white;
+            border-radius: 40px;
+            background-color: gray;
+            transition: all 0.3s ease 0s;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+<form action="UploadIfcFile" method="POST" enctype="multipart/form-data">
+
+    <div class="container">
+        <div class="row" style="padding-top: 100px">
+            <div class="col-md-3" style="border-radius: 15%; background-color: white; padding-bottom:20px">
+                
+                <div class="row" style="padding-top: 65px; padding-left: 10px;">
+                    <div class="col-md-3">
+                        <div class="image-upload">
+                            <label for="file-input">
+                                <img src="https://goo.gl/pB9rpQ"/>
+                            </label>
+                            <input name="ifcFileUpload" id="file-input" type="file"/>
+                        </div>
+                    </div>
+                    <div class="col-md-9" style="padding-left: 25px">
+                        <div class="row" style="font-weight: bold; font-size: 17px; padding-top:10px">Add your design files</div>
+                        <!--div class="row"><a href="#" style="text-decoration: underline">Or select a folder</a></div-->
+                    </div>
+                </div>
+
+                <div class="row" style="padding-top: 20px">
+                    <input type="text" name="customerName" class="form-control" placeholder="Your Customer's name"/>
+                </div>
+                <!--<div class="row" style="padding-top: 20px">
+                    <input type="text" class="form-control" placeholder="Your email"/>
+                </div> -->
+                <div class="row" style="padding-top: 20px">
+                    <!--input type="text" class="form-control" placeholder="Message" style="height:50px; box-shadow: 0px 0px 0px -7px #ebebeb, 0px 10px 0px -7px #ebebeb;"/-->
+                    <textarea name="messageDetails" placeholder="Message"></textarea>
+                </div>
+                <div class="row" style="padding-top: 20px; text-align: center">
+                    <input type="submit" value="Upload File" class="btn-default"/>
+                </div>
+
+            </div>
+        </div>
+    </div>
+	
+</form>	
+</body>
+</html>
